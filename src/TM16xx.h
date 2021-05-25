@@ -81,11 +81,11 @@ class TM16xx
 
   protected:
 //		virtual void sendChar(byte pos, byte data, boolean dot);
-	  virtual void bitDelay();
+	virtual void bitDelay();
     virtual void start();
     virtual void stop();
     virtual void send(byte data);
-		virtual void sendCommand(byte led);
+	virtual void sendCommand(byte led);
     virtual void sendData(byte add, byte data);
     virtual byte receive();
     byte _maxDisplays=2;		// maximum number of digits (grids), chip-dependent
